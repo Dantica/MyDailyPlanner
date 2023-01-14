@@ -6,6 +6,7 @@ import {Timetable, EventModel, TimetableModel} from './components/Timetable'
 
 import {millisFromDateString, MAX_FUTURE_DAYS, EVENTS} from './globals';
 import { TimetableForm } from './components/TimetableForm';
+import {NewTimetable} from './components/NewTimetable';
 
 function App() {
 // In the real world, here is where data would be loaded
@@ -69,12 +70,7 @@ function App() {
 			<header className="App-header">
 				My Daily Planner
 			</header>
-			{/* <DatePicker 
-				className="calendar-no-squiggles"
-				onChange={onChange} 
-				value={value} 
-			/> */}
-			<div className='main-body'>
+			{/* <div className='main-body'>
 				<div className='timetable-form-wrapper'>
 					<TimetableForm saveEventToModel={saveEventToModel} />
 				</div>
@@ -82,7 +78,11 @@ function App() {
 				<div className='timetable-wrapper'>
 					<Timetable timetableModel={timetableModel}/>
 				</div>
+			</div> */}
+			<div style={{textAlign:'center'}}>
+				<NewTimetable />
 			</div>
+			
 		</div>
 	);
 }

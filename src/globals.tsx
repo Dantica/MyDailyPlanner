@@ -36,6 +36,11 @@ export const COLORS = {
     PRIMARY: '#61dafb',
 }
 
+export const DAYS_OF_WEEK = {
+    SHORT: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    LONG: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+}
+
 export function millisFromDateString(dateString: string): number {
     const date: Date = new Date(dateString);
     return date[Symbol.toPrimitive]("number"); // use getUTCTime() instead?

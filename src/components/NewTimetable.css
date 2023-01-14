@@ -1,0 +1,54 @@
+.new-timetable-container {
+    /* position:relative; */
+    text-align:left;
+    border: 3px solid;
+    width: 1000px;
+    height:600px;
+    overflow-y: auto;
+}
+
+.new-timetable-container::-webkit-scrollbar {
+    display: none;
+}
+
+.new-timetable {
+    /* position:relative; */
+}
+
+.new-timetable-time-col {
+    width: 50px;
+}
+
+.new-timetable-col-wrapper {
+    position: relative; /* can remove if truly a wrapper*/
+    text-align:center;
+    float:left;
+}
+
+.new-timetable-col-header {
+    /* position:fixed; */
+    top: 10;
+    position: -webkit-sticky; /*safari*/
+    position: sticky;
+}
+
+.new-timetable-col-body {
+    position: relative;
+}
+
+.new-timetable-row-line {
+    height: calc(1rem / 20);
+    background: grey;
+    position:absolute;
+}
+
+.new-timetable-time-indicator {
+    position: absolute;
+    text-align: right;
+    vertical-align:middle;
+    padding-right: 0.7rem;
+
+    /* height: calc(1rem / 20);
+    background: grey;
+    position:absolute; */
+}
