@@ -1,0 +1,12 @@
+.timetable-form-wrapper {
+    width: 360px;
+    height: 500px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.timetable-form {
+    padding: 20px;
+}

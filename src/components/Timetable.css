@@ -1,0 +1,73 @@
+.timetable-wrapper {
+    
+}
+
+.timetable {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    padding: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+/* .timetable::-webkit-scrollbar {
+    display: none;
+} */
+
+.timetable > .timetable-card {
+    /* overflow-y: auto;
+    height: 500px; */
+    padding: 10px;
+    padding-left:5px;
+}
+
+.timetable > .timetable-card::-webkit-scrollbar {
+    display: none;
+}
+
+.timetable > .timetable-card > .timetable-table {
+    overflow-y: auto;
+    height: 500px;
+    float: left;
+    padding: 0;
+    padding-right: 0;
+    min-width: 750px;
+    /* margin: -50px; */
+}
+
+.timetable > .timetable-card > .timetable-table::-webkit-scrollbar {
+    display: none;
+}
+
+.timetable ol {
+    list-style: none;
+}
+
+.ttcolumn {
+    background: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+    width: 100px;
+    margin-right: -1px;
+}
+
+.ttcolumn.timemarker-column {
+    width: 50px;
+}
+
+.ttslot {
+    background: #fff;
+    border: 1px solid #999;
+    margin-top: -1px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.ttslot.time-marker {
+    border: 0px;
+}
+
+.ttslot.blank {
+    
+}
